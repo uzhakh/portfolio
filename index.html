@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leyla Uzhakhova</title>
+    <!-- ссылки на библиотеки оформления бустртрап -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/u-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- создали собственный стиль для фотографии на главной странице - размер, закругление углов
+    тень на заднем фоне и круг и прозрачность -->
+  </head>
+  <body>
+    <!-- навигационная панель и ее цвет п-0 это отключение паддинга отступа
+    хреф это при нажатии на лого будет выходить заглавная страница
+  navbar expand-lg это ри изменении ширины экрана навигационный список тоже изменится и будет отображаться корректно -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/">
+          <img src="icons/uzhakh-32x32.png" alt="logo" width="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="places.html">Favorite places</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidepanel">
+      <div class="sidepanel__text"><span>Follow me</span></div>
+      <div class="sidepanel__divider"></div>
+      <a href="https://github.com/uzhakh" class="sidepanel__icon">
+        <img src="icons/github_icon.svg" alt="github" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/leylauzhakhova/"
+        class="sidepanel__icon"
+      >
+        <img src="icons/linkedin_icon.svg" alt="linkedin" />
+      </a>
+      <a href="mailto:luzhakh@gmail.com" class="sidepanel__icon">
+        <img src="icons/send-mail2.svg" alt="e-mail" />
+      </a>
+    </div>
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <img src="icons/IMG_6620.jpg" alt="Leyla" class="rounded-img" />
+          <!-- <h1 class="fw-light">Leyla Uzhakhova</h1> -->
+          <h1>
+            Hello! I am
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "Leyla.", "Frontend developer." ]'
+            ></span>
+          </h1>
+          <p class="lead text-muted">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero id
+            natus molestiae modi voluptate et nam aliquam quo, expedita
+            aspernatur error suscipit aliquid nihil maxime nemo, minima
+            similique quia. Explicabo?
+          </p>
+          <!-- <a
+            href="https://www.linkedin.com/in/leylauzhakhova/"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            LinkedIn
+            <img src="icons/linkedin_icon.svg" alt="github" />
+          </a> -->
+          <!-- <a
+            href="https://github.com/uzhakh"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            GitHub
+            <img src="icons/github_icon.svg" alt="github" />
+          </a> -->
+          <!-- <a
+            href="mailto:luzhakh@gmail.com"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            E-Mail
+            <img src="icons/send-mail2.svg" alt="e-mail" />
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="div skills">
+      <div class="div skill_nav">
+      </div>
+<div class="div skill">
+  <div class="div card"><h1>Git</h1><p>60%</p></div>
+  <div class="div card"></h1><p></p></div>
+  <div class="div card"></h1><p></p></div>
+  <div class="div card"></h1><p></p></div>
+</div>
+    </div> -->
+    <!-- <div class="divider"></div> -->
+    <div class="skills">
+      <p>My Skills</p>
+      <div class="skill-wrapper">
+        <div class="card">
+          <div class="skill-name">Git</div>
+          <div class="skill-progress">
+            <div class="progress-bar" id="git-progress"></div>
+            <div class="progress-percent" id="git-percent">60%</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="skill-name">HTML</div>
+          <div class="skill-progress">
+            <div class="progress-bar" id="html-progress"></div>
+            <div class="progress-percent" id="html-percent">60%</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="skill-name">CSS</div>
+          <div class="skill-progress">
+            <div class="progress-bar" id="css-progress"></div>
+            <div class="progress-percent" id="css-percent">60%</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-progress">
+            <div class="progress-bar" id="js-progress"></div>
+            <div class="progress-percent" id="js-percent">60%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-me">
+      <a href="tel:+4591766318" class="btn btn-primary"> +45 91 76 63 18</a>
+
+      <img
+        id="codewars"
+        src="https://www.codewars.com/users/uzhakh/badges/large"
+        alt="some picture"
+      />
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
